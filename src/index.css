@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Glassmorphism theme (Windows 10/11 Acrylic effect) */
+.glass-theme {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #000000 100%) !important;
+  color: #ffffff !important;
+}
+
+.glass-theme [class*="bg-white"],
+.glass-theme [class*="bg-slate-50"],
+.glass-theme [class*="bg-slate-800"],
+.glass-theme [class*="bg-slate-900"] {
+  background-color: rgba(15, 23, 42, 0.45) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+  border-width: 1px !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3) !important;
+  color: #ffffff !important;
+}
+
+.glass-theme [class*="text-slate-900"],
+.glass-theme [class*="text-slate-700"],
+.glass-theme [class*="text-slate-600"],
+.glass-theme [class*="text-gray-900"],
+.glass-theme [class*="text-gray-700"] {
+  color: #e2e8f0 !important;
+}
+
+.glass-theme [class*="text-slate-500"] {
+  color: #94a3b8 !important;
+}
+
+.glass-theme [class*="border-slate-200"],
+.glass-theme [class*="border-slate-300"],
+.glass-theme [class*="border-slate-700"] {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.glass-theme [class*="hover:bg-slate-100"]:hover,
+.glass-theme [class*="hover:bg-slate-700"]:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.glass-theme input,
+.glass-theme select,
+.glass-theme button,
+.glass-theme table {
+  backdrop-filter: blur(8px) saturate(180%) !important;
+}
+
+.glass-theme svg {
+  opacity: 0.9 !important;
+}
